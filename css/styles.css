@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800;900&display=swap');
+
+
+:root {
+          --header-background-color: #66FCF1;
+          --text-color: #F1F1F1;
+          --background-color: #0B0C10;
+          --project-section: #45A29E;
+          --contact-section-background-color: #1F2833;
+          --navbar-text-color: #010101;
+}
+
+* {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+}
+
+html {
+          font-size: 62.5%;
+          scroll-behavior: smooth;
+          overflow: scroll;
+}
+
+body {
+      background-color: var(--background-color);  
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-color);
+}
+
+/* NAVBAR START */
+
+#navbar {
+          position: fixed;
+          top: 0;
+          width: 100vw;
+          display: flex;
+          justify-content: flex-end;
+          background-color: var(--header-background-color);
+          font-size: 2.3rem;
+          z-index: 2;
+}
+
+#navbar ul {
+          display: flex;
+          margin-right: 2.5rem;
+}
+
+#navbar ul li {
+          list-style-type: none;
+}
+
+#navbar ul li a {
+          display: block;
+          text-decoration: none;
+          color: var(--navbar-text-color);
+          font-weight: 400;
+          padding: 2.5rem;
+}
+
+#navbar ul li a:hover {
+          background-color: var(--navbar-text-color);
+          color: var(--text-color);
+}
+
+/* NAVBAR END */
+
+/* WELCOME SECTION */
+
+.intro {
+          font-family: 'Poppins', sans-serif;
+          width: 100%;
+          height: 100vh;
+          background: rgb(11,12,16);
+          background: radial-gradient(circle, rgba(11,12,16,1) 0%, rgba(31,40,51,1) 100%);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+}
+
+.intro h1 {
+          font-size: 6rem;
+          color: var(--text-color);
+          font-weight: 900;
+}
+
+.intro p {
+          font-size: 3rem;
+          color: var(--header-background-color);
+          font-weight: 200;
+}
+
+/* WELCOME SECTION END */
+
+/* PROJECT SECTION START */
+
+#projects {
+      width: 100%;
+      background-color: var(--project-section);
+}
+
+.project-heading {
+      width: 100%;
+      padding: 8.5rem 0 5.5rem;
+      font-size: 2.7rem;
+      text-align: center;
+}
+
+.project-heading h1 {
+      max-width: 64rem;
+      margin: 0 auto;
+      color: var(--text-color);
+      border-bottom: 2px solid var(--text-color);
+}
+
+.main-projects {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      width: 100%;
+      max-width: 123rem;
+      margin: 0 auto;
+      padding: 0 2rem;
+}
+
+.project-flex {
+      width: 33%;
+      max-width: 38rem;
+      background-color: var(--background-color);
+      text-align: center;
+      transition: .3s ease-in-out;
+}
+
+.project-flex:hover {
+      transform: translateY(.8rem);
+}
+
+.project-tile {
+      text-decoration: none;
+      font-size: 2rem;
+      color: var(--text-color);
+}
+
+.project-title{
+      padding: 1rem 0;
+}
+
+.project-tile img {
+      width: 100%;
+      max-width: 38rem;
+      margin: 0 auto;
+      height: calc(100% - 6.8rem);
+      object-fit: cover;
+}
+
+.main-project-2 {
+      width: 100%;
+      max-width: 123rem;
+      margin: 5rem auto 0;
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      padding: 0 2rem;
+}
+
+.project-button {
+      width: 100%;
+      text-align: center;
+      padding: 6rem 0 8rem;
+}
+
+.project-button a {
+      text-decoration: none;
+      color: var(--text-color);
+      font-size: 2rem;
+      padding: 1rem 2rem;
+      background-color: var(--background-color);
+      transition: background-color .5s;
+}
+
+.project-button .my-button:hover {
+      background-color: var(--header-background-color);
+      color: var(--navbar-text-color);
+      transition: .3s;
+}
+
+.my-button i {
+      font-size: 1.8rem;
+      transition: .5s;
+}
+
+.my-button:hover > i {
+      transform: translateX(.3rem);
+}
+
+/* END OF PROJECT SECTION */
+
+/* CONTACT SECTION START */
+
+#contact {
+      color: var(--text-color);
+      text-align: center;
+      min-height: 87vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+.contact-title > h1 {
+      font-size: 6rem;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+}
+
+.contact-title p {
+      padding: 1rem 0 5rem;
+      font-size: 1.8rem;
+}
+
+.social-links {
+      max-width: 100rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-evenly;
+}
+
+
+#profile-link {
+      padding: 1rem 2rem;
+      font-size: 2.3rem;
+      color: var(--text-color);
+      text-decoration: none;
+      transition: .3s ease-in-out;
+}
+
+#profile-link:hover {
+      transform: translateY(.8rem);
+}
+
+/* CONTACT SECTION END */
+
+/* HR SECTION START */
+
+hr {
+      background-color: var(--header-background-color);
+      height: .5rem;
+      border: none;
+}
+
+/* HR SECTION END */
+
+/* FOOTER SECTION STRAT */
+
+footer {
+      width: 100%;
+      margin: 0 auto;
+}
+
+.footer {
+      width: 100%;
+      max-width: 115rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 6vh 0;
+}
+
+.footer p {
+      font-size: 1.8rem;
+      font-weight: 200;
+      color: var(--text-color);
+      margin-right: 1.5rem;
+}
+
+.footer p a {
+      color: var(--text-color);
+}
+
+/* FOOTER SECTION END */
+
+/* Media Quarries for project-section */
+
+@media (max-width: 940px) and (min-width: 350px) {
+
+      .project-flex {
+            width: unset !important;
+      }
+
+      .main-projects {
+            flex-direction: column;
+            align-items: center;
+      }
+
+      .main-project-2 {
+            flex-direction: column;
+            align-items: center;
+      }
+
+}
+
+/* Media Quarries for contact section */
+
+@media (max-width: 800px) and (min-width: 350px) {
+      .social-links {
+            flex-wrap: wrap;
+      }
+}
+
+/* Media Quarries for h1 */
+
+@media (max-width: 768px) {
+      .intro h1 {
+            font-size: 5.3rem;
+      }
+}
+
+/* Media Quarries for navbar */
+
+@media (max-width: 840px) {
+      #navbar {
+            justify-content: center !important;
+      }     
+
+      #navbar ul {
+            margin-right: unset !important;
+      }
+}
+
+/* END OF Media Quarries */
